@@ -1,6 +1,6 @@
 
-SuRL
-====
+ColorCommandGO
+==============
 [![CircleCI Build Status](https://circleci.com/gh/pathaugen/ColorCommandGO.svg?style=svg)](https://circleci.com/gh/pathaugen/ColorCommandGO)
 [![TravisCI Build Status](https://travis-ci.com/pathaugen/ColorCommandGO.svg?branch=master)](https://travis-ci.com/pathaugen/ColorCommandGO)
 APPVEYOR
