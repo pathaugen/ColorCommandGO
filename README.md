@@ -20,7 +20,7 @@ Features:
 * [ ] pkg for any other application to include
 
 Installation and Running (from a directory of your choice):
-* > $ git clone https://github.com/pathaugen/SuRL
+* > $ git clone https://github.com/pathaugen/ColorCommandGO
 * > $ go test
 * > $ go build
 * > $ ColorCommandGO.exe
