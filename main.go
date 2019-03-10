@@ -1,65 +1,26 @@
-
 package main
-
 import (
   "fmt"
-	//"net/http"
-	//"strconv"
-	//"strings"
-	//"bufio"
 	"os"
 	"os/exec"
-	//"time"
-	//"log"
+  c "colorcommandgo"
 )
-
 
 var debug = false // Set to true to debug the question 2 output
 
-
-// ========== START: Golang Console Colors ========== ========== ========== ==========
-// Golang Console Colors
-// Example: fmt.Print( cRed + "HelloWorld" + cClr )
-var cClr				= "\u001b[0m"
-
-var cBold				= "\u001b[1m"
-
-var cBlack			= "\u001b[30m"
-var cRed				= "\u001b[31m"
-var cGreen			= "\u001b[32m"
-var cYellow			= "\u001b[33m"
-var cBlue				= "\u001b[34m"
-var cMagenta		= "\u001b[35m"
-var cCyan				= "\u001b[36m"
-var cWhite			= "\u001b[37m"
-
-var cBlackBG		= "\u001b[40m"
-var cRedBG			= "\u001b[41m"
-var cGreenBG		= "\u001b[42m"
-var cYellowBG		= "\u001b[43m"
-var cBlueBG			= "\u001b[44m"
-var cMagentaBG	= "\u001b[45m"
-var cCyanBG			= "\u001b[46m"
-var cWhiteBG		= "\u001b[47m"
-// ========== END: Golang Console Colors ========== ========== ========== ==========
-
-
 // ========== START: Console Splash ========== ========== ========== ==========
 var appinfo = `
-  ` + cBlue + `======================================================================` + cBold + cCyan + `
+  ` + c.Blue + `======================================================================` + c.Bold + c.Cyan + `
   ,---.     |              ,---.                             |,---.,---.
   |    ,---.|    ,---.,---.|    ,---.,-.-.,-.-.,---.,---.,---||  _.|   |
   |    |   ||    |   ||    |    |   || | || | |,---||   ||   ||   ||   |
-  `+"`"+`---'`+"`"+`---'`+"`"+`---'`+"`"+`---'`+"`"+`    `+"`"+`---'`+"`"+`---'`+"`"+` ' '`+"`"+` ' '`+"`"+`---^`+"`"+`   '`+"`"+`---'`+"`"+`---'`+"`"+`---'` + cClr + `
-  ` + cCyan + `ColorCommandGO` + cClr + `
-  ` + cCyan + `https://github.com/` + cYellow + `pathaugen` + cCyan + `/ColorCommandGO` + cClr + `
-  ` + cBlue + `======================================================================` + cClr + `
+  `+"`"+`---'`+"`"+`---'`+"`"+`---'`+"`"+`---'`+"`"+`    `+"`"+`---'`+"`"+`---'`+"`"+` ' '`+"`"+` ' '`+"`"+`---^`+"`"+`   '`+"`"+`---'`+"`"+`---'`+"`"+`---'` + c.Clr + `
+  ` + c.Blue + `======================================================================` + c.Clr + `
+  ` + c.Cyan + `https://github.com/` + c.Yellow + `pathaugen` + c.Cyan + `/ColorCommandGO` + c.Clr + `
 `
 // ========== END: Console Splash ========== ========== ========== ==========
 
-
 func main() {
-
   // Clear Screen
   cmd := exec.Command("cmd", "/c", "cls")
   cmd.Stdout = os.Stdout
@@ -67,20 +28,13 @@ func main() {
 
   // Output Simplification
   breakspace := ("\n")
-	breakline := ( breakspace + cBlue + "  ======================================================================" + cClr + breakspace )
+	breakline := ( breakspace + c.Blue + "  ======================================================================" + c.Clr + breakspace )
 
   fmt.Print( appinfo )
   fmt.Print( breakspace )
 
-
-
-
-  // ========== START: Main Logic ========== ========== ========== ==========
-  fmt.Print( "  ColorCommandGO Output" )
-  // ========== END: Main Logic ========== ========== ========== ==========
-
-
-
+  fmt.Print( "  ColorCommandGO Usage and Features:" )
+  fmt.Print( c.ColorTest() )
 
   fmt.Print( breakspace )
   fmt.Print( breakline )

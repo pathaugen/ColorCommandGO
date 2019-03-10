@@ -9,9 +9,11 @@ ColorCommandGO
 [![Maintainability](https://api.codeclimate.com/v1/badges/ef77cef9389fa6272496/maintainability)](https://codeclimate.com/github/pathaugen/ColorCommandGO/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/ef77cef9389fa6272496/test_coverage)](https://codeclimate.com/github/pathaugen/ColorCommandGO/test_coverage)
 
-ColorCommandGO: ColorCommandGO (CCGO) provides Golang projects color options that are cross-platform compatible for Windows (including 10) Unix and Linux variants as well as OSX. One package, and you're a color commando.
+ColorCommandGO:
+ColorCommandGO (CCGO) provides Golang projects color options that are cross-platform compatible for Windows (including 10) Unix and Linux variants as well as OSX. One package, and you're a color commando.
 
-Features:
+Features
+--------
 * [x] Golang utilized for single binary without dependencies
 * [x] Console Application
 * [x] Console color support
@@ -19,7 +21,9 @@ Features:
 * [x] Testing framework
 * [ ] pkg for any other application to include
 
-Installation and Running (from a directory of your choice):
+Installation and Running
+------------------------
+From a directory of your choice:
 * > $ git clone https://github.com/pathaugen/ColorCommandGO
 * > $ go test
 * > $ go build
