@@ -34,7 +34,7 @@ func main() {
   fmt.Print( breakspace )
 
   fmt.Print( "  ColorCommandGO Usage and Features:" )
-  fmt.Print( c.ColorTest() )
+  fmt.Print( c.ColorTest( "string", "red" ) )
 
   fmt.Print( breakspace )
   fmt.Print( breakline )
